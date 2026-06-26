@@ -3,6 +3,6 @@ LABEL authors="krish"
 WORKDIR /app
 COPY . /app
 RUN pip install --upgrade pip setuptools wheel
-RUN pip install --no-cache-dir -r requirements.txt
+RUN pip install --no-cache-dir -r requirement.txt
 EXPOSE 5000
 ENTRYPOINT ["python", "app.py"]
