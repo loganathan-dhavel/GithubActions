@@ -22,7 +22,7 @@ jobs:
           docker buildx build -t ${{ secrets.DOCKER_USERNAME }}/test-flask-app:latest .
       - name: Push docker image
         run: |
-          docker buildx push ${{ secrets.DOCKER_USERNAME }}/test-flask-app:latest
+          docker push ${{ secrets.DOCKER_USERNAME }}/test-flask-app:latest
 
 #      - name: Extract meta data
 #        id: meta
