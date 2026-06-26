@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  test-flask-app:
+    image: krishloga9318/test-flask-app
+    restart: on-failure
+    privileged: true
+    ports:
+    - "8085:5000"
